@@ -1,0 +1,100 @@
+* {
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
+  background-color: lightgray;
+}
+
+.container {
+  text-align: center;
+  padding: 0.5rem;
+
+}
+
+/* .component {
+  background-color: blueviolet;
+} */
+
+input {
+  width: 10.1rem;
+  height: 2rem;
+  border-radius: 7px;
+  font-size: large;
+  text-align: center;
+}
+
+#amount-miss,
+#desc-miss {
+  color: rgb(222, 41, 41);
+
+}
+
+#added {
+  color: green;
+}
+
+#ls-cleared {
+  color: rgb(156, 64, 132);
+}
+
+button {
+  width: 19rem;
+  height: 2rem;
+  border-radius: 7px;
+  font-size: large;
+}
+
+button:hover {
+  background-color: gray;
+  width: 19.6rem;
+  /* height: 2.6rem; */
+}
+
+table {
+  margin-left: auto;
+  margin-right: auto;
+  /* width: 30rem; */
+  /* background-color: aqua; */
+  height: 2rem;
+}
+
+
+th,
+td {
+  border-bottom: 2px solid black;
+  /* border-left: 2px solid black; */
+  height: 2rem;
+  padding: 0.5rem;
+}
+
+#master-reset {
+  width: 2rem;
+  height: 2rem;
+}
+
+.tooltip {
+  position: relative;
+  display: inline-block;
+  /* border-bottom: 1px dotted black; */
+}
+
+.tooltip .tooltiptext {
+  visibility: hidden;
+  width: 120px;
+  background-color: rgb(156, 64, 132);
+  color: #fff;
+  text-align: center;
+  border-radius: 6px;
+  padding: 5px 0;
+
+  /* Position the tooltip */
+  position: absolute;
+  z-index: 1;
+}
+
+.tooltip:hover .tooltiptext {
+  visibility: visible;
+}

@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Simple Expense Tracker</title>
+
+  <link rel="stylesheet" href="/style.css">
+
+</head>
+
+
+<body>
+  <div class="container">
+    <h1>Expense Tracker</h1>
+    <div class="container component" id="inputs-div">
+      <input type="text" id="description" placeholder="Description">
+      <input type="text" id="amount" placeholder="Amount £">
+    </div>
+    <div class="container component">
+      <h4 id="desc-miss" style="display: none;">Description Missing !!!</h4>
+      <h4 id="amount-miss" style="display: none;">Amount Missing !!!</h4>
+      <h4 id="added" style="display: none;">Success Expense Addeed</h4>
+      <h4 id="removed" style="display: none;">Expense Removed</h4>
+      <h4 id="ls-cleared" style="display: none;">Browser Storage Clear</h4>
+    </div>
+    <div class="container component" id="add-btn-div">
+      <button id="add">Add</button>
+    </div>
+    <div class="container component" id="table-div">
+      <table>
+        <thead>
+          <th>#</th>
+          <th>Date</th>
+          <th>Description</th>
+          <th>Amount</th>
+          <th></th>
+        </thead>
+        <tbody>
+          <!-- <tr>
+            <td>1</td>
+            <td>10.05.2022</td>
+            <td>Fuelggggggggggggg</td>
+            <td>10.5$</td>
+            <td>X</td>
+          </tr> -->
+        </tbody>
+
+        <tfoot>
+          <!-- <td>33</td>
+          <td></td>
+          <td>Total :</td>
+          <td>33</td>
+          <td>usd</td> -->
+        </tfoot>
+      </table>
+    </div>
+  </div>
+  </div>
+  <div class="container component">
+    <div class="tooltip">
+      <a href="#" id="storage-reset"><img src="/icons/reset.png" alt="C"></a>
+      <span class="tooltiptext">Click to clear your browser storage</span>
+    </div>
+    <br>
+    <p>Master Reset Button </p>
+    <br>
+    <p>&#169 2022 Deyn Valkov</p>
+  </div>
+
+
+
+  <!-- SCRIPTS -->
+  <script src="/LSCtrl.js"></script>
+  <script src="/UICtrl.js"></script>
+  <script src="/app.js"></script>
+</body>
+
+</html>
