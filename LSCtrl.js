@@ -6,7 +6,7 @@ const LSCtrl = (function () {
   let data = [];
   //>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>
   function checforNumbers() {
-    if (!parseInt(_amount.value)) {
+    if (!Number(_amount.value)) {
       _amount.value = '';
     }
   }

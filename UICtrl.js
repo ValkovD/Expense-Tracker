@@ -16,18 +16,19 @@ const UICtrl = (function () {
           <td>${_dataFromLs.indexOf(cost) + 1}</td>
           <td>${cost.date}</td>
           <td>${cost.description}</td>
-          <td>${cost.amount} £</td>
+          <td>${Number(cost.amount).toFixed(2)} £</td>
           <td><a href="#"><img class="delete" id="${_dataFromLs.indexOf(cost)}" src="/icons/icons8-delete-trash-24.png"></a></td>
         </tr>
       `;
         //footer
-        _costTotal += parseInt(cost.amount);
+        // _costTotal += Math.abs(parseInt(cost.amount));
+        _costTotal += Number(cost.amount);
       })
       _tableFooter.innerHTML = `
     <td></td>
     <td></td>
     <td style="font-weight: bold;">Total :</td>
-    <td style="font-weight: bold;">${_costTotal} £</td>
+    <td style="font-weight: bold;">${_costTotal.toFixed(2)} £</td>
     <td></td>
     `;
       _tableBody.innerHTML = _tableRow;
